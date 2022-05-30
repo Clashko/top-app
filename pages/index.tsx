@@ -1,63 +1,56 @@
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import { Header, Button, Paragraph, Tag } from "../components";
 
 export default function Home(): JSX.Element {
-  return (
-    <div className={styles.container}>
+	return (
+		<>
+			<Header tag="h1">Текст</Header>
+			<Button appearance="primary" arrow="right">
+				Кнопка 1
+			</Button>
+			<Button appearance="ghost" arrow="down">
+				Кнопка 2
+			</Button>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+			<Paragraph>
+				Студенты освоят не только hard skills, необходимые для работы
+				веб-дизайнером, но и soft skills — навыки, которые позволят
+				эффективно взаимодействовать в команде с менеджерами,
+				разработчиками и маркетологами. Выпускники факультета могут
+				успешно конкурировать с веб-дизайнерами уровня middle.
+			</Paragraph>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+			<Paragraph size="small">
+				Напишу сразу в двух курсах, так как проходил оба. Java будет
+				многим непросвещённым сложновата в изучении, но здесь перевес
+				из-за лидирующего положения языка как самого популярного в
+				программировании. Выбор мой пал на эту профессию еще и потому,
+				что Java-разработчики получают самую большую зарплату. Хотя
+				Python начинает догонять Java по многим моментам, но вот в
+				крупном екоме разработке Джава все-таки остается главенствующей
+				сейчас. Скажу так – полнота программы и интенсивность присуща
+				обоим курсам GeekBrains. Хочу отметить, что с первого дня
+				занятий вы приступаете к практике и получаете опыт коммерческой
+				разработки уже в свое резюме. Скажу вам как прошедший это –
+				реально помогло в трудоустройстве!
+			</Paragraph>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+			<Paragraph size="large">
+				Выше указаны программы Adobe InDesign, Adobe Illustrator, Corel
+				Draw и ими можно успешно пользоваться дома или в дороге.
+				Современные ноутбуки хорошо справляются с нагрузкой, так зачем
+				загонять специалиста в душный офис. В этой профессии важным
+				считается вдохновение, поэтому дизайнеры ищут его в разных
+				местах.
+			</Paragraph>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+			<Tag size="small">маленький тэг</Tag>
+			<Tag size="medium">большой тэг</Tag>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
-  );
+			<Tag color="ghost">гост тэг</Tag>
+			<Tag color="red">красный тэг</Tag>
+			<Tag color="grey">серый тэг</Tag>
+			<Tag color="green">зеленый тэг</Tag>
+			<Tag color="primary">главный тэг</Tag>
+		</>
+	);
 }
