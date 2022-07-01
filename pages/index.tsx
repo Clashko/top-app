@@ -1,6 +1,9 @@
-import { Header, Button, Paragraph, Tag } from "../components";
+import { useState } from "react";
+import { Header, Button, Paragraph, Tag, Rating } from "../components";
 
 export default function Home(): JSX.Element {
+	const [rating, setRating] = useState<number>(4);
+
 	return (
 		<>
 			<Header tag="h1">Текст</Header>
@@ -51,6 +54,7 @@ export default function Home(): JSX.Element {
 			<Tag color="grey">серый тэг</Tag>
 			<Tag color="green">зеленый тэг</Tag>
 			<Tag color="primary">главный тэг</Tag>
+			<Rating rating={rating} isEditable setRating={setRating} />
 		</>
 	);
 }
