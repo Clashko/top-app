@@ -1,6 +1,14 @@
 import { GetStaticProps } from "next";
 import { useState } from "react";
-import { Header, Button, Paragraph, Tag, Rating } from "../components";
+import {
+	Header,
+	Button,
+	Paragraph,
+	Tag,
+	Rating,
+	Input,
+	TextArea,
+} from "../components";
 import { withLayout } from "../layout/Layout";
 import { MenuItem } from "../interfaces/menu.interface";
 import axios from "axios";
@@ -31,11 +39,9 @@ function Home({ menu }: HomeProps): JSX.Element {
 			<Tag color="green">зеленый тэг</Tag>
 			<Tag color="primary">главный тэг</Tag>
 			<Rating rating={rating} isEditable setRating={setRating} />
-			<ul>
-				{menu.map((m) => (
-					<li key={m._id.secondCategory}>{m._id.secondCategory}</li>
-				))}
-			</ul>
+
+			<Input placeholder="test" />
+			<TextArea placeholder="test" />
 		</>
 	);
 }

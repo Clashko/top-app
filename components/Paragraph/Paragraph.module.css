@@ -1,8 +1,8 @@
-.paragraph{
+.paragraph {
 	margin: 0;
 }
 
-.small{
+.small {
 	font-size: 14px;
 	line-height: 24px;
 }
@@ -12,7 +12,7 @@
 	line-height: 24px;
 }
 
-.large{
+.large {
 	font-size: 18px;
 	line-height: 29px;
 }
